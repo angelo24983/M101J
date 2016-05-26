@@ -12,6 +12,7 @@ public class HelloWorldSparkStyle {
 		Spark.get("/", new Route() {
 			
 			public Object handle(Request arg0, Response arg1) throws Exception {
+				
 				return "Hello World From Spark";
 			}
 		});
