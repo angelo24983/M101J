@@ -23,7 +23,7 @@ public class FindWithProjectionTest {
 
 		MongoDatabase db = client.getDatabase("course");
 
-		MongoCollection<Document> collection = db.getCollection("findWithFilterTest");
+		MongoCollection<Document> collection = db.getCollection("findWithFilterProjectionTest");
 
 		collection.drop();
 
