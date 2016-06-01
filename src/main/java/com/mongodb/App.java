@@ -16,5 +16,9 @@ public class App {
 		MongoDatabase db = client.getDatabase("test").withReadPreference(ReadPreference.secondary());
 		
 		MongoCollection<Document> coll = db.getCollection("test");
+		
+		coll.count();
+		
+		client.close();
 	}
 }
